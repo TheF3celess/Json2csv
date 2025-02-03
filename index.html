@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON to CSV Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>JSON2CSV</h1>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>JSON to CSV Converter</h2>
+        <div class="converter">
+            <div class="input-section">
+                <h3>Input JSON</h3>
+                <textarea id="jsonInput" placeholder="Paste your JSON here..."></textarea>
+                <button id="convertBtn">Convert to CSV</button>
+            </div>
+            <div class="output-section">
+                <h3>Output CSV</h3>
+                <textarea id="csvOutput" readonly placeholder="Your CSV will appear here..."></textarea>
+                <button id="downloadBtn" disabled>Download CSV</button>
+            </div>
+        </div>
+        <div id="message" class="message"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 JSON2CSV Converter. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
